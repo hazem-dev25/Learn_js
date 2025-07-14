@@ -1,6 +1,7 @@
 // start 
 console.log("hallo");
-console.table(["hazem" , "adel" ,"gaber"]);
+console.table(["hazem", "adel", "gaber"]);
+console.log(12);
 // Data Types And Typeof Operator
 console.log(typeof "hazem"); 
 console.log(typeof 100);
@@ -15,3 +16,6 @@ var country = 'Egypt';
 console.log(user);
 console.log(age);
 console.log(country);
+// String Syntax And Character Escape Sequences
+console.log("hazem adel \"gaber\"");
+console.log("HAZEM \nADEL \nGABER");
