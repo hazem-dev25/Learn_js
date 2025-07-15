@@ -1,4 +1,3 @@
-// start 
 console.log("hallo");
 console.table(["hazem", "adel", "gaber"]);
 console.log(12);
@@ -19,3 +18,12 @@ console.log(country);
 // String Syntax And Character Escape Sequences
 console.log("hazem adel \"gaber\"");
 console.log("HAZEM \nADEL \nGABER");
+// Arithmetic Operators
+console.log(1 + 3);
+console.log(2 - 5);
+console.log(3 * 6);
+console.log(4 ** 3);
+console.log(5 / 6);
+console.log(20 % 5)
+
+
