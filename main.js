@@ -25,5 +25,25 @@ console.log(3 * 6);
 console.log(4 ** 3);
 console.log(5 / 6);
 console.log(20 % 5)
+// increment and decrement
+num = 1;
+console.log(num++)
 
+num = 4;
+console.log(++num)
+// Unary Plus And Negation Operators 
+console.log(+133);
+console.log(+"200");
+console.log(+12.9);
+console.log(+null);
+console.log(+"Hazem");
+console.log(+true);
+
+console.log(-"-200");
+console.log(-133);
+console.log(-"200");
+console.log(-12.8);
+console.log(-null);
+console.log(-"Hazem");
+console.log(-true);
 
