@@ -58,4 +58,13 @@ let f = 30;
 let g = true;
 
 console.log(+e * -d);  // 2000
-console.log (-d + +e * 2 + ++f + ++g); // 173
+console.log(-d + +e * 2 + ++f + ++g); // 173
+// Number Methods
+console.log(200..toString());
+console.log(3.45645647.toFixed(1));
+console.log(parseInt("100 hazem"));
+console.log(parseFloat("20.2323 adel"));
+console.log(Number.isInteger(30))
+console.log(Number.isNaN("hazem" - 20));
+console.log(Number.isNaN(20 + 40));
+
