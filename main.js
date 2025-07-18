@@ -67,4 +67,17 @@ console.log(parseFloat("20.2323 adel"));
 console.log(Number.isInteger(30))
 console.log(Number.isNaN("hazem" - 20));
 console.log(Number.isNaN(20 + 40));
+// Math Object
+console.log(Math.round(8.8));
+console.log(Math.round(8.4));
+
+console.log(Math.ceil(5.2));
+console.log(Math.floor(5.2));
+
+console.log(Math.min(12 , 333, 343 ,54465, 5464,55) );
+console.log(Math.max(12, 333, 343, 54465, 5464, 55));
+
+console.log(Math.random());
+console.log(Math.trunc(33.786));
+
 
