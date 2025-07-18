@@ -46,4 +46,16 @@ console.log(-12.8);
 console.log(-null);
 console.log(-"Hazem");
 console.log(-true);
+// Assignment Operators
+let a = 4;
+a = a + 40;
+a += 100; 
+console.log(a);
+// challenge one
+let d = "-100";
+let e = "20";
+let f = 30;
+let g = true;
 
+console.log(+e * -d);  // 2000
+console.log (-d + +e * 2 + ++f + ++g); // 173
