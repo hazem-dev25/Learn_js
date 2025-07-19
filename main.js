@@ -113,7 +113,7 @@ console.log(myname.trim());
 console.log(myname.trim().charAt(2).toLowerCase());
 
 //  String Methods Part 2
-let t =  "Hazem Adel Gaber"
+let t = "Hazem Adel Gaber";
 
 console.log(t.indexOf("Adel", 7));
 console.log(t.lastIndexOf("e"));
@@ -130,3 +130,15 @@ console.log(t.substr(-5, 2));
 console.log(t.includes("Gaber"));
 console.log(t.startsWith("A", 6));
 console.log(t.endsWith("em", 5));
+
+//  String Challenge
+let tt = "Hazem adel Gaber";
+
+// include this methode in your solution (slice , chartAt)
+console.log(tt.charAt(6).toUpperCase() + tt.slice(7, 10)); // Adel
+
+// 9 e 
+console.log(tt.charAt(15).toUpperCase().repeat(9));
+
+// return Array 
+console.log(tt.split(" " , 1));
