@@ -79,5 +79,24 @@ console.log(Math.max(12, 333, 343, 54465, 5464, 55));
 
 console.log(Math.random());
 console.log(Math.trunc(33.786));
+//  Number Challenge
+let c = 1_00;
+let x = 2_00.5;
+let z = 1e2;
+let v = 2.4;
 
+// find the smallest number and return intger 
+console.log(Math.trunc(Math.min(c, x, z, v))); // 2
 
+// use c + v to git right output 10000
+console.log(Math.round(c ** Math.trunc(v)));
+
+// Get intger "2" from v varibale with four methods
+console.log(Math.trunc(v));
+console.log(Math.floor(v));
+console.log(Math.round(v));
+console.log(parseInt(v));
+
+// use this varibales x and v to git this value
+console.log( (Math.trunc(x) / ((Math.floor(v)+true))).toFixed(2) ); // 66.67 => string
+console.log( +(Math.trunc(x) / ((Math.floor(v)+true))).toFixed(0) ); // 67 => number
