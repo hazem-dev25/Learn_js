@@ -113,7 +113,7 @@ console.log(myname.trim());
 console.log(myname.trim().charAt(2).toLowerCase());
 
 //  String Methods Part 2
-let t = "Hazem Adel Gaber"
+let t =  "Hazem Adel Gaber"
 
 console.log(t.indexOf("Adel", 7));
 console.log(t.lastIndexOf("e"));
@@ -122,3 +122,11 @@ console.log(t.slice(0, 5));
 console.log(t.repeat(4));
 
 console.log(t.split(" ", 2));
+
+// String Methods Part 3
+console.log(t.substr(0, 5));
+console.log(t.substr(-5, 2));
+
+console.log(t.includes("Gaber"));
+console.log(t.startsWith("A", 6));
+console.log(t.endsWith("em", 5));
