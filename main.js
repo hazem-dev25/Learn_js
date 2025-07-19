@@ -100,3 +100,25 @@ console.log(parseInt(v));
 // use this varibales x and v to git this value
 console.log( (Math.trunc(x) / ((Math.floor(v)+true))).toFixed(2) ); // 66.67 => string
 console.log( +(Math.trunc(x) / ((Math.floor(v)+true))).toFixed(0) ); // 67 => number
+
+// String Methods Part 1
+let myname = "  Hazem  ";
+
+console.log(myname[2]);
+console.log(myname.charAt(3));
+console.log(myname.length);
+console.log(myname.toUpperCase());
+console.log(myname.toLowerCase());
+console.log(myname.trim());
+console.log(myname.trim().charAt(2).toLowerCase());
+
+//  String Methods Part 2
+let t = "Hazem Adel Gaber"
+
+console.log(t.indexOf("Adel", 7));
+console.log(t.lastIndexOf("e"));
+
+console.log(t.slice(0, 5));
+console.log(t.repeat(4));
+
+console.log(t.split(" ", 2));
