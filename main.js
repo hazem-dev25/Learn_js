@@ -138,7 +138,18 @@ let tt = "Hazem adel Gaber";
 console.log(tt.charAt(6).toUpperCase() + tt.slice(7, 10)); // Adel
 
 // 9 e 
-console.log(tt.charAt(15).toUpperCase().repeat(9));
+console.log(tt.charAt(15).toUpperCase().repeat(9)); // EEEEEEEEE
 
 // return Array 
 console.log(tt.split(" " , 1));
+
+// Comparison Operators
+console.log(10 == "10");
+console.log(10 != "10");
+
+console.log(10 === "10");
+console.log(10 !== "10");
+
+console.log(10 > 20);
+console.log(10 >= 10);
+
