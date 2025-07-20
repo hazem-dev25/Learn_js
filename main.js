@@ -5,16 +5,16 @@ console.log(12);
 console.log(typeof "hazem"); 
 console.log(typeof 100);
 console.log(typeof ["hazem" , "adel", "gaber"]);
-console.log(typeof {name: "hazem" , age: 24 , country: "Egypt"});
+console.log(typeof {name: "hazem" , age: 24 , countrry: "Egypt"});
 console.log(typeof true);
 console.log(typeof undefined);
 //  Variables Introduction
 var user = "hazem";
 var age = 24 ;
-var country = 'Egypt';
+var countrry = 'Egypt';
 console.log(user);
 console.log(age);
-console.log(country);
+console.log(countrry);
 // String Syntax And Character Escape Sequences
 console.log("hazem adel \"gaber\"");
 console.log("HAZEM \nADEL \nGABER");
@@ -159,3 +159,24 @@ console.log(!(10 == "10"));
 console.log(10 > 20 && 20 == 20 && "10" === "10");
 
 console.log(10 > 20 || 20 == 20 || "10" === "10");
+
+// If Conditions
+let price = 1000;
+let discount = true;
+let discountAmount = 200;
+let country = "Egypt";
+
+if (discount === true ) {
+    price -= discountAmount;
+    console.log("welcome to our store");
+} else if (country === "Egypt" ) {
+    price -= 400;
+    console.log("Welcome my Egyption friend");
+} else if (country === "ksa") {
+    price += 1000;
+    console.log("Welcome to our store");
+} else {
+    console.log(price);
+}
+
+console.log(price);
