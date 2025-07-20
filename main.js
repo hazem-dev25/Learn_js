@@ -5,15 +5,15 @@ console.log(12);
 console.log(typeof "hazem"); 
 console.log(typeof 100);
 console.log(typeof ["hazem" , "adel", "gaber"]);
-console.log(typeof {name: "hazem" , age: 24 , countrry: "Egypt"});
+console.log(typeof {name: "hazem" , agee: 24 , countrry: "Egypt"});
 console.log(typeof true);
 console.log(typeof undefined);
 //  Variables Introduction
 var user = "hazem";
-var age = 24 ;
+var agee = 24 ;
 var countrry = 'Egypt';
 console.log(user);
-console.log(age);
+console.log(agee);
 console.log(countrry);
 // String Syntax And Character Escape Sequences
 console.log("hazem adel \"gaber\"");
@@ -185,3 +185,12 @@ if (discount === true ) {
 }
 
 console.log(price);
+
+//  Conditional Ternary Operator
+let name = "hazem";
+let gender = "female";
+let age = 60;
+
+gender === "Male" ? console.log("hello bro") : gender === "female" ? console.log("welcome my lady") : console.log("unknowen gender");
+
+age === 40 ? console.log("your age is great") : age > 40 ? console.log("Soryy your age is old to us") : age < 40 && age < 20 ? console.log("your age is ok") : console.log("Enter your age");
