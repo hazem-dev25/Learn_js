@@ -160,18 +160,23 @@ console.log(10 > 20 && 20 == 20 && "10" === "10");
 
 console.log(10 > 20 || 20 == 20 || "10" === "10");
 
-// If Conditions
+// If Conditions And Nested If Condition
 let price = 1000;
-let discount = true;
+let discount = false;
 let discountAmount = 200;
 let country = "Egypt";
+let student = true;
 
 if (discount === true ) {
     price -= discountAmount;
     console.log("welcome to our store");
 } else if (country === "Egypt" ) {
-    price -= 400;
     console.log("Welcome my Egyption friend");
+    if (student === true) {
+        price -= 600;
+    } else {
+        price -= 400;
+    }
 } else if (country === "ksa") {
     price += 1000;
     console.log("Welcome to our store");
