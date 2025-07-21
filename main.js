@@ -187,10 +187,14 @@ if (discount === true ) {
 console.log(price);
 
 //  Conditional Ternary Operator
-let name = "hazem";
+let name = "mona";
 let gender = "female";
 let age = 60;
 
 gender === "Male" ? console.log("hello bro") : gender === "female" ? console.log("welcome my lady") : console.log("unknowen gender");
 
 age === 40 ? console.log("your age is great") : age > 40 ? console.log("Soryy your age is old to us") : age < 40 && age < 20 ? console.log("your age is ok") : console.log("Enter your age");
+
+let s3r = 0;
+
+console.log(`the price is ${s3r || 100} `);
