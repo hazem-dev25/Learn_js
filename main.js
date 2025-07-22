@@ -224,7 +224,7 @@ switch (day) {
 
 // switch challenge convert if condition to switch statement
 
-let jop = "Support";
+let jop = "IT";
 let salary = 0;
 
 switch (jop) {
@@ -234,12 +234,14 @@ switch (jop) {
         console.log(`your salary is ${salary}`);
         break;
     
-    case "IT" && "Support":
+    case "IT": 
+    case "Support":
         salary = 6000;
         console.log(`your salary is ${salary}`);
         break;
     
-    case "Developer" && "Designer":
+    case "Developer": 
+    case "Designer":
         salary = 7000;
         console.log(`your salary is ${salary}`);
         break;
@@ -249,3 +251,16 @@ switch (jop) {
         console.log(`your salary is ${salary}`);
 
 }
+
+// Array Big Introduction
+let myFamily = ["mother", "father", "sister", "brother" , ["Hazem", "Adel"]];
+
+console.log(` Hi My ${myFamily[1]}`);
+console.log(` Hi My ${myFamily[3][0]}`);
+console.log(` Hi My ${myFamily[4][0][1]}`);
+
+console.log(myFamily);
+myFamily[0] = "omy";
+console.log(myFamily);
+
+console.log(Array.isArray(myFamily));
