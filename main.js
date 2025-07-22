@@ -273,5 +273,21 @@ console.log(names.length);
 names[names.length -1] = "Gamal";
 console.log(names);
 
+// Add And Remove From Array
+console.log(names);
 
+names.unshift("Adham", "Mostafa");
 
+console.log(names);
+
+names.push("Khaled", "Hamza");
+
+console.log(names);
+
+names.shift();
+
+console.log(names);
+
+names.pop();
+
+console.log(names);
