@@ -307,3 +307,13 @@ console.log(names);
 console.log(names.sort());
 
 console.log(names.reverse());
+
+//  Slicing Array
+console.log(names);
+
+console.log(names.slice(3, 6));
+console.log(names.slice(-6, -1));
+
+names.splice(1, 1, "Tamer");
+
+console.log(names);
