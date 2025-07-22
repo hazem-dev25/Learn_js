@@ -168,8 +168,8 @@ let country = "Egypt";
 let student = true;
 
 if (discount === true ) {
-    price -= discountAmount;
     console.log("welcome to our store");
+    price -= discountAmount;
 } else if (country === "Egypt" ) {
     console.log("Welcome my Egyption friend");
     if (student === true) {
@@ -178,8 +178,8 @@ if (discount === true ) {
         price -= 400;
     }
 } else if (country === "ksa") {
-    price += 1000;
     console.log("Welcome to our store");
+    price += 1000;
 } else {
     console.log(price);
 }
@@ -195,6 +195,29 @@ gender === "Male" ? console.log("hello bro") : gender === "female" ? console.log
 
 age === 40 ? console.log("your age is great") : age > 40 ? console.log("Soryy your age is old to us") : age < 40 && age < 20 ? console.log("your age is ok") : console.log("Enter your age");
 
+// Nullish Coalescing Operator And Logical Or
 let s3r = 0;
 
 console.log(`the price is ${s3r || 100} `);
+
+//  Switch Statement
+let day = 9;
+
+switch (day) {
+
+    case 0:
+        console.log("suterday");
+        break;
+    
+    case 1:
+        console.log("sunday");
+        break;
+    
+    case 2:
+    case 3:
+        console.log("monday");
+        break;
+    
+    default:
+        console.log("day off");
+}
