@@ -221,3 +221,31 @@ switch (day) {
     default:
         console.log("day off");
 }
+
+// switch challenge convert if condition to switch statement
+
+let jop = "Support";
+let salary = 0;
+
+switch (jop) {
+    
+    case "Manager":
+        salary = 8000;
+        console.log(`your salary is ${salary}`);
+        break;
+    
+    case "IT" && "Support":
+        salary = 6000;
+        console.log(`your salary is ${salary}`);
+        break;
+    
+    case "Developer" && "Designer":
+        salary = 7000;
+        console.log(`your salary is ${salary}`);
+        break;
+    
+    default:
+        salary = 4000;
+        console.log(`your salary is ${salary}`);
+
+}
