@@ -264,3 +264,14 @@ myFamily[0] = "omy";
 console.log(myFamily);
 
 console.log(Array.isArray(myFamily));
+
+// Using Length With Array
+let names = ["Hazem", "Adel", "Mohamed", "Zaki"];
+
+console.log(names.length);
+
+names[names.length -1] = "Gamal";
+console.log(names);
+
+
+
