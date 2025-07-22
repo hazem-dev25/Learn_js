@@ -291,3 +291,12 @@ console.log(names);
 names.pop();
 
 console.log(names);
+
+//  Searching Array
+console.log(names.indexOf("Khaled"));
+console.log(names.indexOf("Khaled", 6));
+
+console.log(names.lastIndexOf("Mohamed"));
+console.log(names.lastIndexOf("Mohamed", -4));
+
+console.log(names.includes("Zaki"));
