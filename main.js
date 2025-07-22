@@ -266,7 +266,7 @@ console.log(myFamily);
 console.log(Array.isArray(myFamily));
 
 // Using Length With Array
-let names = ["Hazem", "Adel", "Mohamed", "Zaki"];
+let names = ["Hazem", "Adel", "Mohamed", "Zaki" , 89 , "30" , 1000 , 400.34 , 97 ];
 
 console.log(names.length);
 
@@ -300,3 +300,10 @@ console.log(names.lastIndexOf("Mohamed"));
 console.log(names.lastIndexOf("Mohamed", -4));
 
 console.log(names.includes("Zaki"));
+
+// Sorting Arrays
+console.log(names);
+
+console.log(names.sort());
+
+console.log(names.reverse());
