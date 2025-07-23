@@ -317,3 +317,14 @@ console.log(names.slice(-6, -1));
 names.splice(1, 1, "Tamer");
 
 console.log(names);
+
+// Joining Arrays
+let nameof_friends = ["Tariq", "Hossam", "Hatem", "Alaa", "Zakaria", "Mahmoud"];
+let nameof_oldfriends = ["Sayed", "Mamdoh", "Yassin", "Ziad", "AdbelElrahman"];
+let nameof_newfriends = ["Ahmed", "Kamal"];
+
+let All_frinds = (nameof_friends.concat(nameof_oldfriends, nameof_newfriends, [1, 2]));
+
+console.log(All_frinds);
+
+console.log(All_frinds.join(" | ").toUpperCase());
