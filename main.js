@@ -373,3 +373,24 @@ for (let i = 0; i < animals.length; i++) {
     }
 }
 console.log(numof_animlas);
+
+// Nested Loops And Trainings
+let cars = ["bmw", "lada", "ford", "fiat", "kia"];
+
+let colors = ["black", "white", "red"];
+
+let yearOf_model = ["2020", "2021", "2023"];
+
+for (let i = 0; i < cars.length; i++) {
+    console.log(`#`.repeat(15));
+    console.log(cars[i]);
+    console.log(`#`.repeat(15));
+    console.log(`colors : `);
+    for (let j = 0; j < colors.length; j++) {
+        console.log(`~ ${colors[j]}`)
+    }
+        console.log(`yearOf_model`)
+    for (let k = 0; k < yearOf_model.length; k++) {
+        console.log(`~ ${yearOf_model[k]}`);
+    }
+}
