@@ -361,3 +361,15 @@ for (let i = 0; i < friends.length; i++) {
     }
 }
 console.log(real_friend);
+
+
+let animals = ["lion", 232, "cat", 2323, "dog", 3445, "rat", 565, "rabbit", 332];
+
+let numof_animlas = [];
+
+for (let i = 0; i < animals.length; i++) {
+    if (typeof animals[i] === 'number') {
+        numof_animlas.push(animals[i]);
+    }
+}
+console.log(numof_animlas);
