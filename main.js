@@ -328,3 +328,19 @@ let All_frinds = (nameof_friends.concat(nameof_oldfriends, nameof_newfriends, [1
 console.log(All_frinds);
 
 console.log(All_frinds.join(" | ").toUpperCase());
+
+// Array Challenge
+let zero = 0;
+
+let counter = 3;
+
+let my = ["ahmed", "mazero", "elham", "osama", "gamal", "ameer"];
+
+console.log(my.slice(zero, ++counter).reverse()); // ["osama" ,"elham" ,  "mazero", "ahmed"];
+
+console.log(my.slice(++zero, counter).reverse()); // ["elham" , "mazero"];
+
+console.log(my[++zero] = "Elzero"); // "Elzero"
+
+console.log(my[1].slice(4).toUpperCase()); // RO
+
