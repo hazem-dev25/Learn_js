@@ -344,3 +344,9 @@ console.log(my[zero] = "Elzero"); // "Elzero"
 
 console.log(my[zero].slice(counter).toUpperCase()); // RO
 
+//  Loop - For And Concept Of Loop
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
