@@ -350,3 +350,14 @@ for (let i = 1; i <= 10; i++) {
     console.log(i);
 }
 
+//  Looping On Sequences
+let friends = [22, 55, "tamer", 56, "hossam", 778, "salah", "osama", "alaa", 7878];
+
+let real_friend = []; 
+
+for (let i = 0; i < friends.length; i++) {
+    if (typeof friends[i] === 'string') {
+    real_friend.push(friends[i]);
+    }
+}
+console.log(real_friend);
