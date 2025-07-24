@@ -340,7 +340,7 @@ console.log(my.slice(zero, ++counter).reverse()); // ["osama" ,"elham" ,  "mazer
 
 console.log(my.slice(++zero, counter).reverse()); // ["elham" , "mazero"];
 
-console.log(my[++zero] = "Elzero"); // "Elzero"
+console.log(my[zero] = "Elzero"); // "Elzero"
 
-console.log(my[1].slice(4).toUpperCase()); // RO
+console.log(my[zero].slice(counter).toUpperCase()); // RO
 
