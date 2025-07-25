@@ -394,3 +394,32 @@ for (let i = 0; i < cars.length; i++) {
         console.log(`~ ${yearOf_model[k]}`);
     }
 }
+//  Loop Control - Break, Continue, Label
+let shirts = ["polo", "h&m", 12, 54, "buma", 100, 30, "active"];
+
+let color = ["red", "white", "balck", "green"];
+
+for (let i = 0; i < shirts.length; i++) {
+    if (shirts[i] === "buma") {
+        break;
+    }
+    console.log(shirts[i]);
+}
+
+for (let i = 0; i < shirts.length; i++) {
+    if (typeof shirts[i] === "number") {
+        continue;
+    }
+    console.log(shirts[i]);
+}
+
+mainlabel: for (let i = 0; i < shirts.length; i++) {
+    console.log(shirts[i]);
+
+    nestedlabel: for (let j = 0; j < shirts.length; j++) {
+        if (color[j] === "green") {
+            break mainlabel;
+        }
+        console.log(`~ ${color[j]}`);
+    } 
+}
