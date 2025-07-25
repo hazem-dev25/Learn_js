@@ -399,6 +399,7 @@ let shirts = ["polo", "h&m", 12, 54, "buma", 100, 30, "active"];
 
 let color = ["red", "white", "balck", "green"];
 
+
 for (let i = 0; i < shirts.length; i++) {
     if (shirts[i] === "buma") {
         break;
@@ -423,3 +424,21 @@ mainlabel: for (let i = 0; i < shirts.length; i++) {
         console.log(`~ ${color[j]}`);
     } 
 }
+
+// Practice - Add Products To Page
+let laptops = ["Dell", "Hp", " Mac", "Lenovo", "Samsung"];
+
+let showLaptops = 2;
+
+document.write(`<h1>showLaptops ${showLaptops} </h1>`);
+
+for (let i = 0; i < showLaptops; i++) {
+    document.write(`<div>`);
+    document.write(`<h3> ${laptops[i]} </h3>`);
+    for (let j = 0; j < color.length; j++) {
+        document.write(`<p>~ ${color[j]} </P>`);
+    }
+    document.write(`</div>`);
+}
+
+
