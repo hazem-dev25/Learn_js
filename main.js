@@ -441,4 +441,12 @@ for (let i = 0; i < showLaptops; i++) {
     document.write(`</div>`);
 }
 
+//  Loop - While 
 
+let city = ["Alexandria", "cairo", "paris", "london", "Brlin"];
+
+let i = 0;
+while (i < city.length ) {
+    console.log(city[i]);
+    i++;
+}
