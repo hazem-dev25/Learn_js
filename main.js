@@ -450,3 +450,10 @@ while (i < city.length ) {
     console.log(city[i]);
     i++;
 }
+
+//  Loop - Do While
+
+do {
+    console.log(i);
+    i++;
+} while (false);
