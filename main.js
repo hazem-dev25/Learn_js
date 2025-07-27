@@ -443,7 +443,7 @@ for (let i = 0; i < showLaptops; i++) {
 
 //  Loop - While 
 
-let city = ["Alexandria", "cairo", "paris", "london", "Brlin"];
+let city = ["Alexandria", "cairo", "paris", "london", "Brlin" ,"liverpool"];
 
 let i = 0;
 while (i < city.length ) {
@@ -452,8 +452,34 @@ while (i < city.length ) {
 }
 
 //  Loop - Do While
-
 do {
     console.log(i);
     i++;
 } while (false);
+
+
+// Loop - Challenge
+let Admins = ["Ahmed", "Sameh", "Osman",  "Stop", "samira"];
+let Employees = ["Ather", "Adam", "Osama", "Omar", "Said", "Soaad", "Androw", "Alaa", "sara", "Salah"];
+
+let myadmins = 2; 
+
+document.write(`~ <h2> The number of admins we have is ${myadmins } </h2>`);
+
+for (let k = 0; k < myadmins; k++) {
+    document.write(Admins[k]); 
+}
+for (let i = 0; i < Admins.length; i++) {
+    if (Admins[i] === "Stop") break;
+    document.write(`<h2> The name of admins is : ${Admins[i]} </h2>`);
+    for (let j = 0; j < Employees.length; j++) {
+        if (Admins[i][0].toLowerCase() === Employees[j][0].toLowerCase()) {
+            document.write(`~~ ${Employees[j]} <br>`);
+        }
+    }
+    document.write("<hr>");
+}
+
+
+
+
