@@ -483,8 +483,30 @@ for (let i = 0; i < Admins.length; i++) {
 
 // Function Intro And Basic Usage
 
-function sayno (username) {
+function sayno(username) {
     console.log(`Your name is : ${username}`);
 }
 
 sayno("Hatem");
+
+// Function Advanced Examples
+
+function Getyear (start , end ,not_Enclude) {
+    for (let i = start; i <= end; i++) {
+        if (i === not_Enclude) continue;
+        console.log(i);
+    }
+}
+
+Getyear (2005 ,2010 ,2007);
+
+//  Function Return And Use Cases
+
+function range_num(num1 , num2) {
+    return num1 * num2;
+}
+
+
+let result = range_num(30, 80);
+
+console.log(result);
