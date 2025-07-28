@@ -506,7 +506,16 @@ function range_num(num1 , num2) {
     return num1 * num2;
 }
 
-
 let result = range_num(30, 80);
 
 console.log(result);
+
+//  Function Default Parameters
+
+function your_info(name = "unknown" , age  = "unknown") {
+    return `Your name is : ${name} , And your age is : ${age} `;
+}
+
+let info = your_info("Hazem");
+
+console.log(info)
