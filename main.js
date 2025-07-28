@@ -460,11 +460,11 @@ do {
 
 // Loop - Challenge
 let Admins = ["Ahmed", "Sameh", "Osman",  "Stop", "samira"];
-let Employees = ["Ather", "Adam", "Osama", "Omar", "Said", "Soaad", "Androw", "Alaa", "sara", "Salah"];
+let Employees = ["Ather", "Adam", "Osama", "Omar", "Said", "Soaad", "Androw", "Alaa", "sara", "Salah" ];
 
 let myadmins = 2; 
 
-document.write(`~ <h2> The number of admins we have is ${myadmins } </h2>`);
+document.write(`~ <h2> The number of admins we have is ${myadmins} </h2>`);
 
 for (let k = 0; k < myadmins; k++) {
     document.write(Admins[k]); 
@@ -481,5 +481,10 @@ for (let i = 0; i < Admins.length; i++) {
 }
 
 
+// Function Intro And Basic Usage
 
+function sayno (username) {
+    console.log(`Your name is : ${username}`);
+}
 
+sayno("Hatem");
