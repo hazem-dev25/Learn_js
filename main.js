@@ -532,3 +532,15 @@ function calc(...numbers ) {
 
 console.log(calc(10, 30, 60, 79, 100, 60 , 100, 88));
 
+// small test 
+
+function showinfo(name , age , country ,...rate) {
+    console.log(name, age, country)
+    let num_rate = 0;
+    for (let i = 0; i < rate.length; i++) {
+        num_rate += rate[i];
+    }
+    return `your rate is ${num_rate}`
+}
+
+console.log(showinfo("hazem", 32,"egypt" , 30 ,50 ,60 ,30 ,50 ,800));
