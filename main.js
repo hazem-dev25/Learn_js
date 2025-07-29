@@ -518,4 +518,17 @@ function your_info(name = "unknown" , age  = "unknown") {
 
 let info = your_info("Hazem");
 
-console.log(info)
+console.log(info);
+
+//  Function Rest Parameters
+
+function calc(...numbers ) {
+    let result = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        result += numbers[i];
+    }
+    return `the result is : ${result}`
+}
+
+console.log(calc(10, 30, 60, 79, 100, 60 , 100, 88));
+
