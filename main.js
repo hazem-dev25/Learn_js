@@ -534,8 +534,8 @@ console.log(calc(10, 30, 60, 79, 100, 60 , 100, 88));
 
 // small test 
 
-function showinfo(name , age , country ,...rate) {
-    console.log(name, age, country)
+function showinfo(name, age, country, ...rate) {
+    console.log(name, age, country);
     let num_rate = 0;
     for (let i = 0; i < rate.length; i++) {
         num_rate += rate[i];
@@ -543,4 +543,30 @@ function showinfo(name , age , country ,...rate) {
     return `your rate is ${num_rate}`
 }
 
-console.log(showinfo("hazem", 32,"egypt" , 30 ,50 ,60 ,30 ,50 ,800));
+console.log(showinfo("hazem" , 32, "egypt", 100, 100, 100, 100, 100, 101, 305));
+
+//  Random Arguments Function Challenge
+
+function infoo(a, b, c) {
+    let name , age , bool;
+    if (typeof a === "string") name = a;
+    else if (typeof b === "string") name = b;
+    else if (typeof c === "string") name = c;
+
+    if (typeof a === "number") age = a;
+    else if (typeof b === "number") age = b;
+    else if (typeof c === "number") age = c;
+
+    if (typeof a === "boolean") bool = a;
+    else if (typeof b === "boolean") bool = b;
+    else if (typeof c === "boolean") bool = c;
+
+    typeof name === "string" && typeof age === "number" && typeof bool === "boolean" ?
+        console.log(`Hi your name is ${name} and your age is ${age} so you can drive`) :
+        console.log("you cant drive")
+    return;
+}
+
+console.log(infoo("hazem", true, 24));
+console.log(infoo(true, "tamer", 33));
+console.log(infoo("hazem", 55, true));
