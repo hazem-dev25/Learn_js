@@ -578,3 +578,18 @@ let calculator = function (num_1, num_2) {
 }
 
 console.log(calculator(7, 10));
+
+// Return Nested Function
+
+function animals_name(Lnames, Snames) {
+    let massege = `Hi`; 
+    function msg() {
+        return `${massege} : ${allnames()} `;
+        function allnames() {
+            return `${Lnames} and ${Snames}`;
+        }
+    }
+    return msg();
+}
+
+console.log(animals_name("lion", "ant"));
