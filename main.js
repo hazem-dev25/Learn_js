@@ -570,3 +570,11 @@ function infoo(a, b, c) {
 console.log(infoo("hazem", true, 24));
 console.log(infoo(true, "tamer", 33));
 console.log(infoo("hazem", 55, true));
+
+// Anonymous Function And Practice
+
+let calculator = function (num_1, num_2) {
+    return num_1 * num_2;
+}
+
+console.log(calculator(7, 10));
