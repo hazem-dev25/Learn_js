@@ -612,8 +612,8 @@ console.log(family("Adel", "Nelly"));
 
 // Scope - Global And Local
 
-// let n = 20;
-// let m = 50;
+let n = 20;
+let m = 50;
 
 function show() {
     let n = 100;
@@ -622,7 +622,23 @@ function show() {
     console.log(` function scope ${m}`)
 }
 
-show()
+show();
 
 console.log(n);
 console.log(m);
+
+//  Scope - Lexical (Static)
+
+function parent() {
+    let a = 30; 
+    function child() {
+        console.log(`From child ${a} `);
+    }
+    child()
+    function grand() {
+        console.log(` From grand ${a}`);
+    }
+    grand()
+}
+
+parent()
