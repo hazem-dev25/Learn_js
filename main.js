@@ -642,3 +642,9 @@ function parent() {
 }
 
 parent()
+
+// Arrow Function Challenge
+
+let namee =  (...student_names)  => ` String  [${student_names.join("],[")}] => Done !` ; 
+
+console.log(namee("hazem" ,"adel","gaber"));
