@@ -609,3 +609,20 @@ console.log(club("Cr7"));
 let family = (father_name, mother_name) => ` MY father name is : "${father_name}" and my mother is : "${mother_name}"`;
 
 console.log(family("Adel", "Nelly"));
+
+// Scope - Global And Local
+
+// let n = 20;
+// let m = 50;
+
+function show() {
+    let n = 100;
+    let m = 200;
+    console.log(` function scope ${n}`)
+    console.log(` function scope ${m}`)
+}
+
+show()
+
+console.log(n);
+console.log(m);
