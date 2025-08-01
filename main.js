@@ -593,3 +593,19 @@ function animals_name(Lnames, Snames) {
 }
 
 console.log(animals_name("lion", "ant"));
+
+
+//  Arrow Function Syntax
+
+let print =  num => num;
+
+console.log(print(10));
+
+
+let club = real_madrid => real_madrid;
+
+console.log(club("Cr7"));
+
+let family = (father_name, mother_name) => ` MY father name is : "${father_name}" and my mother is : "${mother_name}"`;
+
+console.log(family("Adel", "Nelly"));
