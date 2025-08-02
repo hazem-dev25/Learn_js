@@ -654,10 +654,9 @@ console.log(namee("hazem", "adel", "gaber"));
 
 let numbers = [1, 2, 3, 4, 5];
 
-let add_num = function add(element) {
+let add_num = function(element) {
     return element + element;
 }
-
 let result_num = numbers.map(add_num);
 
 console.log(result_num);
@@ -665,7 +664,20 @@ console.log(result_num);
 let prand = ["dell", "hp", "mac", "lenovo", "samsunge"];
 
 let new_parnd = prand.map(function (prand) {
-    return`the prand is ${prand} | ${prand} ` ;
+    return`the prand is ${prand} | ${prand} `;
 }) 
 
 console.log(new_parnd);
+
+// try
+
+let b = "h234a56z35e76m";
+
+
+let new_b = b.split("").map(function (ele) {
+    return isNaN(parseInt(ele)) ? ele :"" ;
+})
+    .join("");
+
+console.log(new_b);
+
