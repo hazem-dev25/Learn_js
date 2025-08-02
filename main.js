@@ -647,4 +647,25 @@ parent()
 
 let namee =  (...student_names)  => ` String  [${student_names.join("],[")}] => Done !` ; 
 
-console.log(namee("hazem" ,"adel","gaber"));
+console.log(namee("hazem", "adel", "gaber"));
+
+
+// Higher Order Functions - Map
+
+let numbers = [1, 2, 3, 4, 5];
+
+let add_num = function add(element) {
+    return element + element;
+}
+
+let result_num = numbers.map(add_num);
+
+console.log(result_num);
+
+let prand = ["dell", "hp", "mac", "lenovo", "samsunge"];
+
+let new_parnd = prand.map(function (prand) {
+    return`the prand is ${prand} | ${prand} ` ;
+}) 
+
+console.log(new_parnd);
