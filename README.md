@@ -5,8 +5,8 @@ This repo documents my full learning journey of JavaScript.
 ## My Progress ✅
 - [X] Variables & Data Types
 - [X] Conditions
-- [ ] Loops
-- [ ] Functions
+- [X] Loops
+- [X] Functions
 - [ ] Arrays & Objects
 - [ ] DOM & Events
 - [ ] OOP
