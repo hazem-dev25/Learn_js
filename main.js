@@ -700,7 +700,7 @@ let even_num = num0.filter(function (ele) {
 console.log(even_num);
 
 
-// test
+// practice 
 
 let mix = "hsd4hd3";
 
@@ -713,3 +713,13 @@ let mixnum = mix.split("").filter(function (ele) {
     .join("");
 
 console.log(mixnum);
+
+//  Higher Order Functions - Reduce
+
+let number0 = [2, 5, 7, 9, 10];
+
+let add = number0.reduce(function (acc, current) {
+    return acc + current;
+}, 10);
+
+console.log(add);
