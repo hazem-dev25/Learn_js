@@ -669,10 +669,9 @@ let new_parnd = prand.map(function (prand) {
 
 console.log(new_parnd);
 
-// try
+// Example
 
 let b = "h234a56z35e76m";
-
 
 let new_b = b.split("").map(function (ele) {
     return isNaN(parseInt(ele)) ? ele :"" ;
@@ -681,3 +680,21 @@ let new_b = b.split("").map(function (ele) {
 
 console.log(new_b);
 
+
+//  Higher Order Functions - Filter
+
+let workers = ["Hazem", "Adel", "Hamza", "Hamada", "Tamer", "To2a"];
+
+let filter_workers = workers.filter(function (ele) {
+    return ele.startsWith("H");
+})
+
+console.log(filter_workers);
+
+let num0 = [34, 35, 67, 98, 10, 30, 5, 100];
+
+let even_num = num0.filter(function (ele) {
+    return ele % 2 === 0;
+})
+
+console.log(even_num);
