@@ -698,3 +698,18 @@ let even_num = num0.filter(function (ele) {
 })
 
 console.log(even_num);
+
+
+// test
+
+let mix = "hsd4hd3";
+
+let mixnum = mix.split("").filter(function (ele) {
+    return !isNaN(parseInt(ele)) ? ele :""; 
+}).map(function (ele) {
+    return ele * ele
+        ;
+})
+    .join("");
+
+console.log(mixnum);
