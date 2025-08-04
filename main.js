@@ -723,3 +723,18 @@ let add = number0.reduce(function (acc, current) {
 }, 10);
 
 console.log(add);
+
+
+// Higher Order Functions - ForEach And Practice
+
+let list = document.querySelectorAll("ul li");
+
+list.forEach(function (ele) {
+    ele.onclick = function () {
+        list.forEach(function () {
+            ele.classList.remove("active");
+        })
+        this.classList.add("active");
+    }
+})
+
