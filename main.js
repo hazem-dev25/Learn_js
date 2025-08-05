@@ -738,3 +738,18 @@ list.forEach(function (ele) {
     }
 })
 
+//  Object - Introduction
+
+let footballer = {
+    // properties
+    name1: "Hazem",
+    age1: 24,
+    // methods
+    sayinfo: function () {
+        return `hallo ${this.name1} your age is ${this.age1}`
+    }
+};
+
+console.log(footballer.name1);
+console.log(footballer.age1);
+console.log(footballer.sayinfo());
