@@ -753,3 +753,22 @@ let footballer = {
 console.log(footballer.name1);
 console.log(footballer.age1);
 console.log(footballer.sayinfo());
+
+
+//  Dot Notation vs Bracket Notation
+
+let varibale = "age";
+
+let work = {
+    name_worker: "Mohamed",
+    "country of": "Egypt",
+    age: 34,
+    workinfo: function () {
+        return `Hello ${this.name_worker} Your country is ${this["country of"]}`
+    },
+};
+
+console.log(work.name_worker);
+console.log(work["country of"]);
+console.log(work.workinfo());
+console.log(work[varibale]);
