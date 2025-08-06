@@ -772,3 +772,51 @@ console.log(work.name_worker);
 console.log(work["country of"]);
 console.log(work.workinfo());
 console.log(work[varibale]);
+
+// Nested Object And Advanced Trainings
+
+let remote_work = {
+    name: "Hazem",
+    age: 24,
+    skills: ["html", "css", "JS"],
+    addresses: {
+        Ksa: "Riyadh",
+        Egypt: {
+            addresse_one: "cairo",
+            addresse_two: "Alexandria",
+        }
+    },
+    Avalibale: true,
+    cheakAV: function () {
+        if (this.Avalibale === true) {
+            return `You Avalibale to Work today ${this.name}`
+        } else {
+            return `YOU not avalibale to work`
+        }
+    },
+};
+
+console.log(remote_work.name);
+console.log(remote_work.age);
+console.log(remote_work.skills);
+console.log(remote_work.addresses.Egypt.addresse_two);
+console.log(remote_work.cheakAV());
+
+// Create Object With New Keyword
+
+let admin =  new Object ({
+    name: "Hazem"
+});
+console.log(admin.name);
+admin.name = "Adel";
+admin.age = 19;
+admin.cheakage = function () {
+    if (this.age >= 20) {
+        return `your age is ${this.age} and you big enough`
+    } else {
+        return `You are not big enough to join`
+    }
+};
+console.log(admin.name);
+console.log(admin.age);
+console.log(admin.cheakage());
