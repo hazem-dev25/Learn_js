@@ -812,7 +812,7 @@ admin.name = "Adel";
 admin.age = 19;
 admin.cheakage = function () {
     if (this.age >= 20) {
-        return `your age is ${this.age} and you big enough`
+        return `your age is ${this.age} and you big enough to join`
     } else {
         return `You are not big enough to join`
     }
