@@ -841,3 +841,9 @@ new_score.score_num = 500;
 console.log(new_score);
 console.log(new_score.multi_score());
 console.log(new_score.name_sport);
+
+// Create Object With Assign Method
+
+let newObj = Object.assign(score, remote_work, footballer, { football: 55 });
+
+console.log(newObj);
