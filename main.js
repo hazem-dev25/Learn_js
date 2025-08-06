@@ -1,3 +1,4 @@
+
 console.log("hallo");
 console.table(["hazem", "adel", "gaber"]);
 console.log(12);
@@ -820,3 +821,23 @@ admin.cheakage = function () {
 console.log(admin.name);
 console.log(admin.age);
 console.log(admin.cheakage());
+
+// Create Object With Create Method
+
+let score = {
+    name_sport: "Zamalek",
+    score_num: 200,
+    multi_score: function () {
+        return this.score_num * 2;
+    }
+};
+
+console.log(score.multi_score());
+
+let new_score = Object.create(score); // important 
+
+new_score.score_num = 500;
+
+console.log(new_score);
+console.log(new_score.multi_score());
+console.log(new_score.name_sport);
