@@ -844,6 +844,33 @@ console.log(new_score.name_sport);
 
 // Create Object With Assign Method
 
-let newObj = Object.assign(score, remote_work, footballer, { football: 55 });
+let newObj = Object.assign(score, remote_work, footballer, { football: 55 } , {club: "ahly"});
 
 console.log(newObj);
+
+
+//  What Is DOM And Select Elements
+
+let dom_class = document.getElementsByClassName("form_dom");
+
+console.log(dom_class);
+
+let dom_id = document.getElementById("js");
+
+console.log(dom_id);
+
+let dom_query = document.querySelector("#js");
+
+console.log(dom_query);
+
+let dom_queryall = document.querySelectorAll("#js")
+
+console.log(dom_queryall);
+
+let tagByname = document.getElementsByTagName("h1");
+
+console.log(tagByname[2]);
+
+let title = document.title;
+
+console.log(title);
