@@ -7,7 +7,7 @@ This repo documents my full learning journey of JavaScript.
 - [X] Conditions
 - [X] Loops
 - [X] Functions
-- [ ] Arrays & Objects
+- [X] Arrays & Objects
 - [ ] DOM & Events
 - [ ] OOP
 - [ ] Asynchronous JS
