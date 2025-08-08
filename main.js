@@ -863,7 +863,7 @@ let dom_query = document.querySelector("#js");
 
 console.log(dom_query);
 
-let dom_queryall = document.querySelectorAll("#js")
+let dom_queryall = document.querySelectorAll(".form_form");
 
 console.log(dom_queryall);
 
@@ -874,3 +874,10 @@ console.log(tagByname[2]);
 let title = document.title;
 
 console.log(title);
+
+// Get Set Elements Content And Attributes
+
+let html = document.querySelector(".try");
+
+console.log(html.innerHTML);
+console.log(html.textContent);
