@@ -881,3 +881,21 @@ let html = document.querySelector(".try");
 
 console.log(html.innerHTML);
 console.log(html.textContent);
+
+// - Destructuring Arrays Part 1
+
+let first = 3;
+let sec = 5; 
+let third = 7;
+let fourth = 2;
+
+
+let people = ["Hazem", "Adel", "Gaber", "Zaki"];
+
+[first, sec, third, fourth, fifth = "mohamed"] = people;
+
+console.log(first);
+console.log(sec);
+console.log(third);
+console.log(fourth);
+console.log(fifth);
