@@ -909,3 +909,24 @@ let tv = ["samsunge", "dell", "drake", ["LG", "Hp", ["lenovo", "sony"]]];
 let [, , fir, [, seco, [, thir]]] = tv;
 
 console.log(fir, seco, thir);
+
+//  Destructuring Arrays Part 3 - Swap Variables
+
+let book = "video"; 
+let video = "book"; 
+
+// the normal way
+
+let box = book;
+
+book = video;
+
+video = box;
+
+
+// in destrucuring
+
+[book, video] = [video, book];
+
+console.log(book); 
+console.log(video); 
