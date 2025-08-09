@@ -932,20 +932,31 @@ console.log(book);
 console.log(video); 
 
 
-// Destructuring Objects Part 1
+// Destructuring Objects Part 1 and Destructuring Objects Part 2
 
 let information = {
     thename: "hazem",
     theage: 24,
     thecountry: "Egypt",
     thejop: "IT",
-    "skills years": 34
+    "skills years": 34,
+    children: {
+        child_one: "Ahmed",
+        child_two: "Amer"
+    },
+    color_info: "balck"
 };
 
-let { thename, thecountry, thejop } = information;
+let { thename: the_n, thecountry, thejop: jo, children:{child_two:am } , color_info = red  } = information;
 
-console.log(thename);
 console.log(thecountry);
-console.log(thejop);
+console.log(jo);
 console.log(information.theage);
 console.log(information["skills years"]);
+console.log(the_n);
+console.log(am);
+console.log(color_info);
+
+
+
+
