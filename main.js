@@ -917,11 +917,11 @@ let video = "book";
 
 // the normal way
 
-let box = book;
+// let box = book;
 
-book = video;
+// book = video;
 
-video = box;
+// video = box;
 
 
 // in destrucuring
@@ -930,3 +930,22 @@ video = box;
 
 console.log(book); 
 console.log(video); 
+
+
+// Destructuring Objects Part 1
+
+let information = {
+    thename: "hazem",
+    theage: 24,
+    thecountry: "Egypt",
+    thejop: "IT",
+    "skills years": 34
+};
+
+let { thename, thecountry, thejop } = information;
+
+console.log(thename);
+console.log(thecountry);
+console.log(thejop);
+console.log(information.theage);
+console.log(information["skills years"]);
