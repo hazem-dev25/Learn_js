@@ -899,3 +899,13 @@ console.log(sec);
 console.log(third);
 console.log(fourth);
 console.log(fifth);
+
+
+// Destructuring Arrays Part 2
+
+let tv = ["samsunge", "dell", "drake", ["LG", "Hp", ["lenovo", "sony"]]];
+
+
+let [, , fir, [, seco, [, thir]]] = tv;
+
+console.log(fir, seco, thir);
