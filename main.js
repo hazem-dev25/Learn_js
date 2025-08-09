@@ -957,6 +957,21 @@ console.log(the_n);
 console.log(am);
 console.log(color_info);
 
+// - Destructuring Function Parameters
+
+let year = {
+    days: 100,
+    weeks: 56,
+    years: {
+        even: 23,
+        odd: 32,
+    },
+};
 
 
+show_info(year);
+
+function  show_info({ days: d , weeks: w , years: { even: n } }) {
+    console.log(`your days is ${d} and your weeks is ${w} and your years is ${n}`)
+}
 
