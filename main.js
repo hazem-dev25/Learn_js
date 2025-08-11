@@ -975,3 +975,21 @@ function  show_info({ days: d , weeks: w , years: { even: n } }) {
     console.log(`your days is ${d} and your weeks is ${w} and your years is ${n}`)
 }
 
+
+// Set Data Types And Methods
+
+let Data = [2, 3, 4, 4, 5, 6, 6, 7 ,"hazem"];
+
+let uniqedata = new Set(Data);
+
+console.log(uniqedata);
+
+console.log(uniqedata.add(20));
+
+uniqedata.delete(4);
+
+console.log(uniqedata.has("hazem"));
+
+uniqedata.clear();
+
+console.log(uniqedata);
