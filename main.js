@@ -993,3 +993,21 @@ console.log(uniqedata.has("hazem"));
 uniqedata.clear();
 
 console.log(uniqedata);
+
+
+// WeakSet And Garbage Collector
+
+let dataone = [22, 22, 44, 5, 5, 70, 78 ];
+
+let datainfo = new WeakSet([{ Aa: "alo", Bb: "lo"}]);
+
+console.log(datainfo);
+
+// let key = datainfo.keys()
+
+// console.log(key.next().value);
+// console.log(key.next().value);
+// console.log(key.next().value);
+// console.log(key.next().value);
+// console.log(key.next().value);
+// console.log(key.next());
