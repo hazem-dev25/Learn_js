@@ -1038,3 +1038,15 @@ console.log(map.has("country"));
 map.clear();
 
 console.log(map.size);
+
+//  Array.from Method
+
+let arr = Array.from("12344" ,  n => +n + +n);
+
+console.log(arr);
+
+let setarray = [2, 4, 5, 5, 55, 6, 7, 8, 8, 9];
+
+let set = new Set(setarray);
+
+console.log(Array.from(set));
