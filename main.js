@@ -1011,3 +1011,30 @@ console.log(datainfo);
 // console.log(key.next().value);
 // console.log(key.next().value);
 // console.log(key.next());
+
+
+// Map Methods
+
+let map = new Map();
+
+map.set("name", "hazem");
+map.set("number", 30);
+map.set("country", "Egypt");
+
+console.log(map.get("name"));
+console.log(map.get("number"));
+console.log(map.get("country"));
+
+console.log(map);
+
+console.log(map.size);
+
+console.log(map.delete("name"));
+
+console.log(map.size);
+
+console.log(map.has("country"));
+
+map.clear();
+
+console.log(map.size);
