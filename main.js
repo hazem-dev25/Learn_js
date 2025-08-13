@@ -1059,6 +1059,26 @@ arraycopy.copyWithin(1, -3, -2);
 
 arraycopy.copyWithin(0, -1);
 
+arraycopy.copyWithin(3 , -2 , -1);
+
 console.log(arraycopy);
 
+// Array.some Method
 
+let somenum = [2, 3, 5, 6, 8, 9, 0, 23, 32];
+
+let sometry = 30;
+
+let somen = somenum.some(function (e) {
+    return e > this;
+},sometry)
+
+console.log(somen);
+
+function cheaknum(num , value) {
+    return num.some(function (e) {
+        return e === value;
+    })
+}
+
+console.log(cheaknum(somenum, 4));
