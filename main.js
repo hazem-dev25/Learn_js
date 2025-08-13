@@ -1050,3 +1050,15 @@ let setarray = [2, 4, 5, 5, 55, 6, 7, 8, 8, 9];
 let set = new Set(setarray);
 
 console.log(Array.from(set));
+
+//  Array.copyWithin Method
+
+let arraycopy = [23, 45, 13, 55, 3, 2, "a", "z"];
+
+arraycopy.copyWithin(1, -3, -2);
+
+arraycopy.copyWithin(0, -1);
+
+console.log(arraycopy);
+
+
