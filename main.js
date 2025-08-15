@@ -1082,3 +1082,38 @@ function cheaknum(num , value) {
 }
 
 console.log(cheaknum(somenum, 4));
+
+
+// Spread Syntax And Use Cases
+
+let nums = [12, 3, 4, 5, 6];
+
+let nums2 = [34, 56, 12, 20];
+
+console.log([...nums, ...nums2]);
+
+let obj = {
+    spread: 1, 
+    any: 2
+}
+let objone = {
+    spreadd: 3, 
+    anyy: 4
+}
+
+console.log({ ...obj, ...objone, a: 77});
+
+
+let mypeople = ["hazem", "adel", "gaber", "zaki"];
+
+let newpeople = ["mohamed", "aboalfa"];
+
+mypeople.push(...newpeople);
+
+console.log(mypeople);
+
+// Get Array From Object
+
+let tyrone = Object.keys(objone); // Or (.Values)
+
+console.log(tyrone);
