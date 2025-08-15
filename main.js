@@ -1117,3 +1117,15 @@ console.log(mypeople);
 let tyrone = Object.keys(objone); // Or (.Values)
 
 console.log(tyrone);
+
+// Map And Set Challenge
+
+let n1 = [10, 30, 10, 20]; // 70
+
+let n2 = [30, 20, 10]; // 60 
+
+console.log("####") // 210
+
+console.log(Math.max(...n1) * [...n1, ...n2].length);
+
+
