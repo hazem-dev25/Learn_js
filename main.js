@@ -1129,3 +1129,11 @@ console.log("####") // 210
 console.log(Math.max(...n1) * [...n1, ...n2].length);
 
 
+// - Regular Expressions - Modifiers
+
+let string1 = "Hi my name is Hazem and my Age is 24 And hazem is strong";
+
+
+let rugexpre = /Hazem?name/ig;
+
+console.log(string1.match(rugexpre));
