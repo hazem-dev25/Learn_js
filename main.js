@@ -1156,3 +1156,11 @@ console.log(numstwo.match(/[^0-9]/g));
 let string2 = 'Haz47384em Ad656el G343457236aber';   
 
 console.log(string2.match(/g[0-9]+aber/ig));
+
+//  Regular Expressions - Character Classes Part 1
+
+let webs = ' h@g.com 8@4.org k@.com h@@@h..com h@g.net 65372 ';
+
+console.log(webs.match(/\w@\w.(com|net)/g));
+
+console.log(webs.match(/\d/g));
