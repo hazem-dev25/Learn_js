@@ -1126,14 +1126,33 @@ let n2 = [30, 20, 10]; // 60
 
 console.log("####") // 210
 
-console.log(Math.max(...n1) * [...n1, ...n2].length);
+console.log(Math.max(...n1) * [...n1, ...n2].length); //Done
 
 
 // - Regular Expressions - Modifiers
 
-let string1 = "Hi my name is Hazem and my Age is 24 And hazem is strong";
+let string1 = "Hi my name is Hazem and my Age is 25 And hazem is strong";
 
 
-let rugexpre = /Hazem?name/ig;
+let rugexpre = /Hazem/ig;
 
 console.log(string1.match(rugexpre));
+
+
+//  Regular Expressions - Ranges Part 1
+
+let web = 'com net org code io';
+console.log(web.match(/(com|org|io)/g));
+
+
+let numsone = '135786859';
+
+console.log(numsone.match(/[^0-5]/g));
+
+let numstwo = '1@5$7%8#68*5!9';
+
+console.log(numstwo.match(/[^0-9]/g));
+
+let string2 = 'Haz47384em Ad656el G343457236aber';   
+
+console.log(string2.match(/g[0-9]+aber/ig));
