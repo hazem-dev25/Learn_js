@@ -1239,6 +1239,7 @@ let objfun = {
     ageof: 35, 
     countryof: "Egypt",
     Avalibaleof: true,
+    "Gender of": "male",
     cheakwo: function () {
         if (this.ageof < 34) {
             return this.Avalibaleof;
@@ -1248,8 +1249,8 @@ let objfun = {
     }
 }
 console.log(objfun.cheakwo());
-
-
+console.log(objfun.ageof);
+console.log(objfun["Gender of"]);
 console.log(Object.values(objfun));
 
 let numsspread = [13, 4, 6, 7, 8, 5, 3];
