@@ -1175,3 +1175,28 @@ let regex = /\bhazem|hazem\b/ig;
 console.log(chartclass.match(regex));
 
 console.log(regex.test(chartclass));
+
+
+// Regular Expressions - Quantifiers Part 1
+
+let sites = ' hazemadel@gmail.com  adel7686@yahoo.net usa@newyork.us google@hash.org';
+
+let sitestry = /\w+@\w+.\w+/ig;
+
+console.log(sites.match(sitestry));
+
+let numregex = `02210  00 0120 0233 43 230 010`
+
+let numsreg = /0\d*0/gi;
+
+console.log(numregex.match(numsreg));
+
+let sitestwo = ' https://www.google.com   http://youtube.org  web.net'
+
+let sitesreg = /(https?:\/\/\w+.)?\w+(.\w+)/ig;
+
+console.log(sitestwo.match(sitesreg));
+
+
+
+
