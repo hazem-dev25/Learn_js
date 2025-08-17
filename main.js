@@ -1198,5 +1198,11 @@ let sitesreg = /(https?:\/\/\w+.)?\w+(.\w+)/ig;
 console.log(sitestwo.match(sitesreg));
 
 
+// Regular Expressions - Quantifiers Part 2
 
+let numreg = 'h123h h5345h h3453234h h2345532343h h12h';
 
+console.log(numreg.match(/h\d{3}h/ig));
+console.log(numreg.match(/h\d{3,5}h/ig));
+console.log(numreg.match(/h\d{3,}h/ig));
+console.log(numreg.match(/h\d{0,2}h/ig));
