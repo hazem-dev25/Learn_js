@@ -1159,8 +1159,19 @@ console.log(string2.match(/g[0-9]+aber/ig));
 
 //  Regular Expressions - Character Classes Part 1
 
-let webs = ' h@g.com 8@4.org k@.com h@@@h..com h@g.net 65372 ';
+let webs = ' hadel6464@gmail.com 8@4.org k@.com h@@@h..com h@g.net 65372 ';
 
-console.log(webs.match(/\w@\w.(com|net)/g));
+console.log(webs.match(/\w+@\w+.(com|net)/g));
 
 console.log(webs.match(/\d/g));
+
+
+//  - Regular Expressions - Character Classes Part 2
+
+let chartclass = '1hazem hazem2 gazem7 Hazem99 20hazemm Hazem';
+
+let regex = /\bhazem|hazem\b/ig;
+
+console.log(chartclass.match(regex));
+
+console.log(regex.test(chartclass));
