@@ -1206,3 +1206,82 @@ console.log(numreg.match(/h\d{3}h/ig));
 console.log(numreg.match(/h\d{3,5}h/ig));
 console.log(numreg.match(/h\d{3,}h/ig));
 console.log(numreg.match(/h\d{0,2}h/ig));
+
+// revison^^ 
+
+let array = [12, 34, 45, 67, 89, 9, 5, 34];
+
+let arrayfun = array.filter(function (ele) {
+    return ele < 10;
+})
+
+console.log(arrayfun);
+
+
+let string = ["Hazem", "Hamed", "Adel", "Ahmed", "Adham", "Hamza"];
+
+let [fi, se, thi, , ,] = string
+
+console.log(string);
+console.log(fi);
+console.log(thi);
+
+
+let stringfun = string.filter(function (el) {
+    return el[0] === "H";
+})
+
+console.log(stringfun);
+
+
+let objfun = {
+    nameof: "Hazem", 
+    ageof: 35, 
+    countryof: "Egypt",
+    Avalibaleof: true,
+    cheakwo: function () {
+        if (this.ageof < 34) {
+            return this.Avalibaleof;
+        } else {
+            return `Sorry ${this.nameof} You Are So Younge To Work`
+        }
+    }
+}
+console.log(objfun.cheakwo());
+
+
+console.log(Object.values(objfun));
+
+let numsspread = [13, 4, 6, 7, 8, 5, 3];
+
+let numsspread2 = [3, 4, 67, 8, 84, 2, 2];
+
+numsspread.push(...numsspread2);
+
+console.log(numsspread);
+
+let mapre = new Map();
+
+console.log(mapre.set("name", "value"));
+console.log(mapre.set("age", 50));
+console.log(mapre.set("city", "Alexandria"));
+
+
+console.log(mapre.get("city"));
+console.log(mapre.has("age"));
+console.log(mapre.delete("name"));
+console.log(mapre.size);
+mapre.clear();
+console.log(mapre);
+
+let nummap = [1, 3, 5, 7, 9];
+
+let numsmap = nummap.map( function (element) {
+    return element * element; 
+})
+console.log(numsmap);
+
+
+for (let i = 1; i <= 10; i++){
+    console.log(i);
+}
