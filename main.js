@@ -1200,12 +1200,13 @@ console.log(sitestwo.match(sitesreg));
 
 // Regular Expressions - Quantifiers Part 2
 
-let numreg = 'h123h h5345h h3453234h h2345532343h h12h';
+let numreg = 'h123h h5345h h3453234h h2345532343h h12h 1hgasg1';
 
 console.log(numreg.match(/h\d{3}h/ig));
 console.log(numreg.match(/h\d{3,5}h/ig));
 console.log(numreg.match(/h\d{3,}h/ig));
 console.log(numreg.match(/h\d{0,2}h/ig));
+console.log(numreg.match(/1\w{0,6}1/ig));
 
 // revison^^ 
 
@@ -1286,3 +1287,17 @@ console.log(numsmap);
 for (let i = 1; i <= 10; i++){
     console.log(i);
 }
+
+
+// Regular Expressions - Quantifiers Part 3
+
+let reg = 'Hi my name is hazem'
+
+console.log(reg.match(/azem$/ig));
+
+console.log(reg.match(/^hi/ig));
+
+let regx = ' 1hazemz 3adelz 8gaber 9zakiz';
+
+console.log(regx.match(/\d\w{0,5}(?=z)/ig));
+console.log(regx.match(/\d\w{0,9}(?!z)/ig));
