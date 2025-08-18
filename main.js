@@ -1301,3 +1301,11 @@ let regx = ' 1hazemz 3adelz 8gaber 9zakiz';
 
 console.log(regx.match(/\d\w{0,5}(?=z)/ig));
 console.log(regx.match(/\d\w{0,9}(?!z)/ig));
+
+// - Regular Expressions - Replace With Pattern
+
+let replace = 'Hi my name is $ and my age is 24 years old ';
+
+console.log(replace.replace("$", "Hazem"));
+
+console.log(replace.replace(/ld/ig, "hahha"));
