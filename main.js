@@ -1330,3 +1330,22 @@ console.log(url3.match(re));
 console.log(url4.match(re));
 console.log(url5.match(re));
 
+
+// (OOP) Constructor Function Introduction !
+
+function Car(color, price ,model) {
+    this.co = color; 
+    this.pri = price + 30000; 
+    this.mo = model + 1; 
+}
+
+
+let newcar = new Car("red", 30000, 2010);
+let newcar1 = new Car("black", 40000, 2015);
+let newcar2 = new Car("blue", 50000, 2020);
+
+console.log(newcar.co, newcar.mo , newcar.pri);
+console.log(newcar1.co, newcar1.mo , newcar1.pri);
+console.log(newcar2.co, newcar2.mo , newcar2.pri);
+
+
