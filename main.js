@@ -1451,3 +1451,61 @@ console.log(teamone.n);
 console.log(team.tmgsplayers());
 
 console.log(team.count);
+
+//  Class Inheritance
+
+class company {
+    static count = 0;
+    constructor(Buildings , floors , Employees , manger_name) {
+        this.b = Buildings;
+        this.f = floors; 
+        this.e = Employees;
+        this.mn = manger_name;
+        company.count++;
+    }
+    msgfrom_me() {
+        return `Please Mister ${this.mn} keep your head open`
+    }
+        updatemangername(newmangername) {
+        this.mn = newmangername;
+    }
+}
+
+let newcompany = new company(12, 4, 30 ,"Hamza");
+
+console.log(newcompany.b);
+console.log(newcompany.msgfrom_me());
+console.log(company.count);
+
+class school extends company {
+    constructor(Buildings, floors, Employees, manger_name, students) {
+        super(Buildings, floors, Employees, manger_name)
+        this.s = students; 
+    }
+}
+
+let newschool = new school(20, 8, 50, "khaled", 200);
+
+console.log(newschool.msgfrom_me());
+console.log(newschool.s);
+console.log(newschool.f);
+
+
+class university extends school {
+    constructor(Buildings,floors,Employees,manger_name,students,Doctors) {
+        super(Buildings, floors, Employees, manger_name, students)
+        this.d = Doctors;
+    }
+    msgfor_Doctors() {
+        return `please ${this.d} keep your eyes on the students`
+    }
+}
+
+let newuniversity = new university(40, 18, 100, "Engy", 1500, "Hazem");
+
+console.log(newuniversity.msgfor_Doctors());
+console.log(newuniversity.msgfrom_me());
+console.log(newuniversity instanceof company);
+console.log(newuniversity.mn);
+newuniversity.updatemangername("Ahmed"); 
+console.log(newuniversity.mn);
