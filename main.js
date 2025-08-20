@@ -1365,4 +1365,24 @@ let user3 = new User("Mohamed", 5000, 2000);
 
 console.log(user2 instanceof User);
 
-console.log(user2.n ,user2.sal,user2.y);
+console.log(user2.n, user2.sal, user2.y);
+
+//  Deal With Properties And Methods
+
+class School {
+    constructor(teacher , students ,numofincomethisyear ,year) {
+        this.te = teacher; 
+        this.stu = students || "unkown";
+        this.noity = numofincomethisyear >= 1000000  ? numofincomethisyear + 200000 : numofincomethisyear 
+        this.y = year;
+    }
+    stmsg() {
+        return ` Hi Teacher ${this.te} Your Student is ${this.stu} And The Year Is ${this.y} And Your Income This Year Is ${this.noity} `
+    }
+}
+
+let schoolinfo = new School("Ahmed", "Tamer", 1500000, 2024);
+
+console.log(schoolinfo.stmsg());
+
+console.log(schoolinfo.noity);
