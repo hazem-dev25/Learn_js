@@ -1349,3 +1349,20 @@ console.log(newcar1.co, newcar1.mo , newcar1.pri);
 console.log(newcar2.co, newcar2.mo , newcar2.pri);
 
 
+// (OOP) Constructor Function New Syntax ^^
+
+class User {
+    constructor(name , salary , year) {
+        this.n = name;
+        this.sal = salary + 2000;
+        this.y = year;
+    }
+}
+
+let user1 = new User("Hazem" ,3000,2001);
+let user2 = new User("Mostafa" ,4000,2002);
+let user3 = new User("Mohamed", 5000, 2000);
+
+console.log(user2 instanceof User);
+
+console.log(user2.n ,user2.sal,user2.y);
