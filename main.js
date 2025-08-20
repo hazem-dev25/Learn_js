@@ -1424,3 +1424,30 @@ info2.updatecountry("Usa");
 console.log(info2.n)
 console.log(info2.g)
 console.log(info2.c)
+
+console.log("#".repeat(30));
+
+//  Class Static Properties And Methods
+
+class team {
+    static count = 0; 
+    constructor(name , number , teamn ) {
+        this.n = name; 
+        this.num = number; 
+        this.t = teamn;
+        team.count ++; 
+    }
+    static tmgsplayers() {
+        return `the numbers of members is ${this.count}`
+    }
+}
+
+let teamone = new team("Mohamed", 22, "Zamalek");
+let teamtow = new team("Hazem", 10, "Zamalek");
+let teamthree = new team("Mostafa", 13, "Ahly");
+
+console.log(teamone.n);
+
+console.log(team.tmgsplayers());
+
+console.log(team.count);
