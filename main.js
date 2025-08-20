@@ -1373,7 +1373,7 @@ class School {
     constructor(teacher , students ,numofincomethisyear ,year) {
         this.te = teacher; 
         this.stu = students || "unkown";
-        this.noity = numofincomethisyear >= 1000000  ? numofincomethisyear + 200000 : numofincomethisyear 
+        this.noity = numofincomethisyear >= 1000000 ? numofincomethisyear + 200000 : numofincomethisyear; 
         this.y = year;
     }
     stmsg() {
@@ -1381,8 +1381,46 @@ class School {
     }
 }
 
-let schoolinfo = new School("Ahmed", "Tamer", 1500000, 2024);
+let schoolinfo = new School("Ahmed", "Ahmed", 1500000, 2024 );
+
 
 console.log(schoolinfo.stmsg());
 
+
 console.log(schoolinfo.noity);
+
+console.log(schoolinfo instanceof School);
+
+// Update Properties And Built In Constructors
+
+class info1 {
+    constructor(name , age , country) {
+        this.n = name;
+        this.g = age; 
+        this.c = country;
+    }
+    updatename(newname) {
+        this.n = newname;
+    }
+    updateage(newage) {
+        this.g = newage;
+    }
+    updatecountry(new_country) {
+        this.c = new_country;
+    }
+}
+
+let info2 = new info1("Hazem", 24, "Egypt");
+
+console.log(info2.n)
+console.log(info2.g)
+console.log(info2.c)
+
+info2.updatename("Adel");
+info2.updateage(25);
+info2.updatecountry("Usa");
+
+
+console.log(info2.n)
+console.log(info2.g)
+console.log(info2.c)
