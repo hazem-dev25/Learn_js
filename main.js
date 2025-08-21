@@ -1503,9 +1503,11 @@ class university extends school {
 
 let newuniversity = new university(40, 18, 100, "Engy", 1500, "Hazem");
 
+
 console.log(newuniversity.msgfor_Doctors());
 console.log(newuniversity.msgfrom_me());
 console.log(newuniversity instanceof company);
 console.log(newuniversity.mn);
 newuniversity.updatemangername("Ahmed"); 
 console.log(newuniversity.mn);
+console.log(university.count);
