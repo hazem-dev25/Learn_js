@@ -1551,7 +1551,7 @@ class customer {
         this.#id = id;
     }
     getid() {
-        return parseInt(this.#id) + 4;
+        return parseInt(this.#id) * 2;
     }
 }
 
@@ -1571,3 +1571,47 @@ let newshop = new shop("gaber", "Ksa", "654rt", "mac");
 console.log(newshop.getid());
 
 console.log(newshop instanceof customer);
+
+
+// Add To Prototype Chain And Extend Constructors Features
+
+class Home {
+    #owner_name;
+    constructor(floor , doors , owner_name) {
+        this.floor = floor; 
+        this.doors = doors;
+        this.#owner_name = owner_name;
+    }
+    getOname() {
+        return `welcome ${this.#owner_name}`
+    }
+}
+
+let newhome = new Home(2, 3, "Khaled");
+
+console.log(newhome.getOname());
+
+console.log(Home.prototype);
+console.log(newhome);
+
+Home.prototype.sayfloorsplusedoors = function () {
+    return `the num of floors is ${this.floor} and num of doors is ${this.doors}`
+}
+
+console.log(newhome.sayfloorsplusedoors());
+
+Object.prototype.hazem = "Hazem";
+
+console.log(newhome.hazem);
+
+console.log(newhome);
+
+String.prototype.add_doots = function (val) {
+    return `.${this}.`
+}
+
+let namE = "Hamo";
+
+console.log(namE.add_doots());
+
+console.log(newhome.sayfloorsplusedoors());
