@@ -1512,6 +1512,7 @@ newuniversity.updatemangername("Ahmed");
 console.log(newuniversity.mn);
 console.log(university.count);
 
+// Fast revision 
 
 class hazem {
     static count = 0;
@@ -1527,7 +1528,6 @@ class hazem {
 }
 
 let newhazem = new hazem("hazem", 66, "Usa");
-let newhazem2 = new hazem("hazem", 66, "Usa");
 
 
 console.log(newhazem.g);
@@ -1539,3 +1539,35 @@ console.log(newhazem.g);
 console.log(newhazem instanceof hazem);
 
 console.log(hazem.count);
+
+
+// Class Encapsulation
+
+class customer {
+    #id;
+    constructor(name , country , id) {
+        this.n = name; 
+        this.c = country;
+        this.#id = id;
+    }
+    getid() {
+        return parseInt(this.#id) + 4;
+    }
+}
+
+let newcustomer = new customer("Ahmed", "Egypt", "2324ji")
+
+console.log(newcustomer.getid());
+
+class shop extends customer {
+    constructor(name, country, id, shopname) {
+        super(name, country, id);
+        this.sn = shopname;
+    }
+}
+
+let newshop = new shop("gaber", "Ksa", "654rt", "mac"); 
+
+console.log(newshop.getid());
+
+console.log(newshop instanceof customer);
