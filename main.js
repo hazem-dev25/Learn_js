@@ -1511,3 +1511,31 @@ console.log(newuniversity.mn);
 newuniversity.updatemangername("Ahmed"); 
 console.log(newuniversity.mn);
 console.log(university.count);
+
+
+class hazem {
+    static count = 0;
+    constructor(name, age, country) { 
+        this.n = name || "unknown";
+        this.g = age;
+        this.c = country;
+        hazem.count++;
+    }
+    uptadeg(age) {
+        this.g = age;
+    }
+}
+
+let newhazem = new hazem("hazem", 66, "Usa");
+let newhazem2 = new hazem("hazem", 66, "Usa");
+
+
+console.log(newhazem.g);
+
+newhazem.uptadeg(24);
+
+console.log(newhazem.g);
+
+console.log(newhazem instanceof hazem);
+
+console.log(hazem.count);
