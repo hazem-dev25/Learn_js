@@ -1674,3 +1674,27 @@ Object.defineProperties(ownobj, {
 console.log(ownobj);
 console.log(Object.getOwnPropertyDescriptor(ownobj, "e"));
 console.log(Object.getOwnPropertyDescriptors(ownobj));
+
+
+Object.defineProperty(shop, "name", {
+    writable: false,
+    enumerable: true ,
+    value: "hazem",
+    configurable: false,
+});
+
+shop.name = "Ahmed";
+
+console.log(delete shop.name);
+console.log(shop.name);
+
+Object.prototype.big_age = 100; 
+
+console.log(newhome.big_age);
+
+shop.prototype.age = function () {
+    return big_age * 2;
+};
+
+console.log(newshop.age());
+
