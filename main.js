@@ -1648,3 +1648,29 @@ Object.defineProperty(myobj, "b", {
 myobj.b = 44;
 
 console.log(myobj);
+
+// Object Meta Data And Descriptor Part 2
+
+let ownobj = {
+    a: 44, 
+    b: 88,
+}
+
+Object.defineProperties(ownobj, {
+    c: {
+        writable: true,
+        value: 33,
+    },
+    d: {
+        writable: true,
+        value: 99,
+    }, 
+    e: {
+        writable: true,
+        value: 22,
+    }
+});
+
+console.log(ownobj);
+console.log(Object.getOwnPropertyDescriptor(ownobj, "e"));
+console.log(Object.getOwnPropertyDescriptors(ownobj));
