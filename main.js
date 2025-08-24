@@ -1614,4 +1614,37 @@ let namE = "Hamo";
 
 console.log(namE.add_doots());
 
-console.log(newhome.sayfloorsplusedoors());
+Array.prototype.sum =  function () {
+    return this.reduce (function (acc ,current) {
+        return acc + current;
+    },0)
+}
+
+let numof_people = [3, 45, 5, 6, 7, 8, 54, 54, 5, 7];
+
+console.log(numof_people.sum());
+
+let numof_cars = [3, 5, 54, 7, 8, 54, 54, 5, 7];
+
+console.log(numof_cars.sum());
+
+
+//  Object Meta Data And Descriptor Part 1
+
+let myobj = {
+    a: 1,
+    c: 2,
+} 
+
+console.log(myobj);
+
+Object.defineProperty(myobj, "b", {
+    writable: false,
+    configurable: true,
+    enumerable: true,
+    value: 88,
+});
+
+myobj.b = 44;
+
+console.log(myobj);
