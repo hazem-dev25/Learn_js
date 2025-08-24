@@ -1675,6 +1675,7 @@ console.log(ownobj);
 console.log(Object.getOwnPropertyDescriptor(ownobj, "e"));
 console.log(Object.getOwnPropertyDescriptors(ownobj));
 
+// try <?**>?
 
 Object.defineProperty(shop, "name", {
     writable: false,
@@ -1698,3 +1699,27 @@ shop.prototype.age = function () {
 
 console.log(newshop.age());
 
+Number.prototype.multi = function (val) {
+    return this * 3; 
+}
+
+let multinum = 10;
+
+console.log(multinum.multi());
+
+let namedot = "Hazem";
+
+console.log(namedot.add_doots());
+
+Boolean.prototype.convert_to_true = function() {
+    return !this.valueOf();
+};
+
+let usa = false; 
+
+console.log(usa);
+console.log(usa.convert_to_true());
+
+let nm = 434343;
+
+console.log(Array.from(nm.toString()));
