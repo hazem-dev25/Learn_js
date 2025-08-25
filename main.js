@@ -1723,3 +1723,18 @@ console.log(usa.convert_to_true());
 let nm = 434343;
 
 console.log(Array.from(nm.toString()));
+
+
+// - Date And Time Introduction
+
+let newtime = new Date(); 
+
+console.log(newtime);
+
+console.log(Date.now());
+
+let min = Date.now() / 60;
+
+console.log(min);
+
+let hours = Date.now() / 60;
