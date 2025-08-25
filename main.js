@@ -1737,4 +1737,21 @@ let min = Date.now() / 60;
 
 console.log(min);
 
-let hours = Date.now() / 60;
+
+//  Get Date And Time
+
+let datenow = new Date();
+
+let birthday = new Date ("dec 21 , 00");
+
+let myage = datenow - birthday;
+
+console.log(myage / 1000 / 60 / 60 / 24 / 365);
+
+console.log(datenow.getTime());
+console.log(datenow.getFullYear());
+console.log(datenow.getMonth());
+console.log(datenow.getDay());
+console.log(datenow.getVarDate());
+
+
