@@ -1930,7 +1930,7 @@ function* Infinite() {
     // return "Hazem"; 
     yield 4; 
     yield 5; 
-    let index = 0;
+    let index = 6;
     while (true) {
     yield index++
     }
