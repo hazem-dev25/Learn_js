@@ -1821,3 +1821,19 @@ console.log("###".repeat(30));
 let date1 = new Date(2000, 11, 21, 3, 34); 
 
 console.log(date1);
+
+Object.defineProperty(shop, "ok" , {
+    writable: false, 
+    value: "not okay"
+});
+
+// revision
+
+let nnn = new shop("hazem", "ha", 8787, "haz");
+
+
+shop.prototype.ok = function () {
+    return ` not okay `
+}
+
+console.log(newshop.ok());
