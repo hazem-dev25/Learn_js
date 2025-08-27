@@ -1835,9 +1835,9 @@ console.log(newshop.ok());
 
 let startd = new Date()
 
-for (let i = 1; i < 10000; i++) {
-    document.writeln(`<div>${i}</div>`);
-}
+// for (let i = 1; i < 10000; i++) {
+//     document.writeln(`<div>${i}</div>`);
+// }
 
 let end = new Date();
 
@@ -1845,3 +1845,28 @@ let end = new Date();
 realtime = end - startd;
 
 console.log(realtime);
+
+//  - Generator Function Introduction
+
+function* number() {
+    yield 1; 
+    yield "Hazem"; 
+    yield 4; 
+    yield 8; 
+}
+
+getnums = number()
+
+console.log(getnums.next());
+console.log(getnums.next());
+console.log(getnums.next());
+console.log(getnums.next());
+console.log(getnums.next());
+
+for (let value of number()) {
+    console.log(value);
+}
+
+for (let value of getnums) {
+    console.log(value);
+}
