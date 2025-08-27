@@ -1814,3 +1814,10 @@ setdate.setFullYear(2000, 11,21);
 console.log(setdate);
 
 console.log("###".repeat(30));
+
+
+//  - Formatting Date And Time
+
+let date1 = new Date(2000, 11, 21, 3, 34); 
+
+console.log(date1);
