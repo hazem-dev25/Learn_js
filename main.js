@@ -1886,3 +1886,74 @@ for (let i = 1; i < 700; i++) {
 }
 
 console.log(Exam.next().value);
+
+// - Delegate Generator Function
+
+function* one()  {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+
+function* two()  {
+    yield "A";
+    yield "B";
+    yield "C";
+}
+
+function* one_two() {
+    yield* one();
+    yield* two();
+    yield* [1, 3, 5];
+}
+
+let onetwo = one_two(); 
+
+console.log(onetwo.next());
+console.log(onetwo.next());
+console.log(onetwo.next());
+console.log(onetwo.next());
+console.log(onetwo.next());
+console.log(onetwo.next());
+console.log(onetwo.next());
+console.log(onetwo.next());
+console.log(onetwo.next());
+console.log(onetwo.next());
+
+console.log("####".repeat(20));
+//  Generate Infinite Numbers
+
+function* Infinite() {
+    yield 1;
+    yield 2;
+    yield 3; 
+    // return "Hazem"; 
+    yield 4; 
+    yield 5; 
+    let index = 0;
+    while (true) {
+    yield index++
+    }
+}
+
+let inf = Infinite(); 
+
+
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
+console.log(inf.next());
