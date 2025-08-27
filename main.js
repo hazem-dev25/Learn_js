@@ -1768,6 +1768,7 @@ let arrayone = [3, 4, 6, 7, 55, 7, 8, 5, 33, 100];
 let arraytwo = [3, 4, 6, 7, 55, 7, 8, 5, 33, 100];
 
 console.log(arrayone.bigger_than_ten());
+console.log(arrayone.concat(arraytwo));
 
 console.log(Array.prototype);
 console.log(Number.prototype);
@@ -1792,12 +1793,6 @@ console.log(setdate);
 console.log("###".repeat(30));
 
 setdate.setMilliseconds(2000);
-
-console.log(setdate); 
-
-console.log("###".repeat(30));
-
-setdate.setTime(300000)
 
 console.log(setdate); 
 
@@ -1870,3 +1865,24 @@ for (let value of number()) {
 for (let value of getnums) {
     console.log(value);
 }
+
+// Try Generator Function Introduction
+
+function* exam() {
+    yield "hi student";
+    yield "congratletions your scoore is 600";
+}
+
+let Exam = exam(); 
+
+console.log(Exam.next().value);
+
+for (let i = 1; i < 700; i++) {
+    if (i < 300) {
+        console.log("Soryy you fail")
+    }else {
+        console.log(" you sucec");
+    }
+}
+
+console.log(Exam.next().value);
