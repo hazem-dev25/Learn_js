@@ -1606,7 +1606,7 @@ console.log(newhome.hazem);
 
 console.log(newhome);
 
-String.prototype.add_doots = function (val) {
+String.prototype.add_doots = function (_val) {
     return `.${this}.`
 }
 
@@ -1699,7 +1699,7 @@ shop.prototype.age = function () {
 
 console.log(newshop.age());
 
-Number.prototype.multi = function (val) {
+Number.prototype.multi = function (_val) {
     return this * 3; 
 }
 
@@ -1749,9 +1749,21 @@ let myage = datenow - birthday;
 console.log(myage / 1000 / 60 / 60 / 24 / 365);
 
 console.log(datenow.getTime());
+
 console.log(datenow.getFullYear());
+
 console.log(datenow.getMonth());
+
 console.log(datenow.getDay());
-console.log(datenow.getVarDate());
 
+// new function **^
 
+Array.prototype.bigger_than_ten = function () {
+    return this.filter(function (val) {
+    return val > 10;
+    })
+};
+
+let arrayone = [3, 4, 6, 7, 55, 7, 8, 5, 33, 100];
+
+console.log(arrayone.bigger_than_ten());
