@@ -1822,18 +1822,26 @@ let date1 = new Date(2000, 11, 21, 3, 34);
 
 console.log(date1);
 
-Object.defineProperty(shop, "ok" , {
-    writable: false, 
-    value: "not okay"
-});
-
 // revision
-
-let nnn = new shop("hazem", "ha", 8787, "haz");
-
 
 shop.prototype.ok = function () {
     return ` not okay `
 }
 
 console.log(newshop.ok());
+
+//  - Tracking Operations Time
+
+
+let startd = new Date()
+
+for (let i = 1; i < 10000; i++) {
+    document.writeln(`<div>${i}</div>`);
+}
+
+let end = new Date();
+
+
+realtime = end - startd;
+
+console.log(realtime);
