@@ -1765,5 +1765,52 @@ Array.prototype.bigger_than_ten = function () {
 };
 
 let arrayone = [3, 4, 6, 7, 55, 7, 8, 5, 33, 100];
+let arraytwo = [3, 4, 6, 7, 55, 7, 8, 5, 33, 100];
 
 console.log(arrayone.bigger_than_ten());
+
+console.log(Array.prototype);
+console.log(Number.prototype);
+console.log(String.prototype);
+console.log(Boolean.prototype);
+
+let game = false; 
+
+console.log(game.convert_to_true());
+
+game = game.convert_to_true(); 
+
+console.log(game)
+
+
+// Set Date And Time
+
+let setdate = new Date(); 
+
+console.log(setdate); 
+
+console.log("###".repeat(30));
+
+setdate.setMilliseconds(2000);
+
+console.log(setdate); 
+
+console.log("###".repeat(30));
+
+setdate.setTime(300000)
+
+console.log(setdate); 
+
+console.log("###".repeat(30));
+
+setdate.setTime(300000)
+
+console.log(setdate);
+
+console.log("###".repeat(30));
+
+setdate.setFullYear(2000, 11,21);
+
+console.log(setdate);
+
+console.log("###".repeat(30));
