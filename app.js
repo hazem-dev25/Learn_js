@@ -4,9 +4,9 @@
 // console.log(u);
 // console.log(s());
 
-import aha,{q, l as list , ll } from "./main.js"
+import* as All  from "./main.js"
 
-console.log(ll);
-console.log(q);
-console.log(list);
-console.log(aha());
+console.log(All);
+console.log(All.default);
+console.log(All.ll);
+console.log(All.u);
