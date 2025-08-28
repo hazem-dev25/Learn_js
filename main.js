@@ -27,6 +27,7 @@ console.log(4 ** 3);
 console.log(5 / 6);
 console.log(20 % 5)
 // increment and decrement
+let num;
 num = 1;
 console.log(num++)
 
@@ -888,6 +889,7 @@ let first = 3;
 let sec = 5; 
 let third = 7;
 let fourth = 2;
+let fifth = 4;
 
 
 let people = ["Hazem", "Adel", "Gaber", "Zaki"];
@@ -1638,14 +1640,12 @@ let myobj = {
 
 console.log(myobj);
 
-Object.defineProperty(myobj, "b", {
+Object.defineProperty(myobj, "p", {
     writable: false,
     configurable: true,
     enumerable: true,
     value: 88,
 });
-
-myobj.b = 44;
 
 console.log(myobj);
 
@@ -1684,10 +1684,7 @@ Object.defineProperty(shop, "name", {
     configurable: false,
 });
 
-shop.name = "Ahmed";
 
-console.log(delete shop.name);
-console.log(shop.name);
 
 Object.prototype.big_age = 100; 
 
@@ -1837,7 +1834,7 @@ let startd = new Date()
 let end = new Date();
 
 
-realtime = end - startd;
+let realtime = end - startd;
 
 console.log(realtime);
 
@@ -1850,7 +1847,7 @@ function* number() {
     yield 8; 
 }
 
-getnums = number()
+let getnums = number()
 
 console.log(getnums.next());
 console.log(getnums.next());
@@ -1921,6 +1918,7 @@ console.log(onetwo.next());
 console.log(onetwo.next());
 
 console.log("####".repeat(20));
+
 //  Generate Infinite Numbers
 
 function* Infinite() {
@@ -1957,3 +1955,35 @@ console.log(inf.next());
 console.log(inf.next());
 console.log(inf.next());
 console.log(inf.next());
+
+// Modules Import And Export
+
+let y = 9; 
+
+let u = [1, 2, 3, 5, 54, 5, 6];
+
+function sayhallo() {
+    return `*hello*`
+}
+
+export {y, u, sayhallo  };
+
+// Named vs Default Export And Import All
+
+let q = 90;
+
+let l = [3, 4, 4, 5, 5, 7, 8, 8, 9, 7, 6, 5, 4];
+
+let ll = l.reduce(function (acc, crrunt) {
+    return acc + crrunt;
+})
+
+export default function () {
+    return ` Hi Hazem`
+};
+
+export {
+    q,
+    l,
+    ll
+}
