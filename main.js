@@ -1972,7 +1972,7 @@ export {y, u, sayhallo  };
 
 let q = 90;
 
-let l = [3, 4, 4, 5, 5, 7, 8, 8, 9, 7, 6, 5, 4];
+let l = [3, 4, 100, 5, 5, 7, 8, 8, 9, 7, 6, 5, 4];
 
 let ll = l.reduce(function (acc, crrunt) {
     return acc + crrunt;

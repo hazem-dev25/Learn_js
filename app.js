@@ -4,7 +4,7 @@
 // console.log(u);
 // console.log(s());
 
-import aha,{ q, l as list , ll } from "./main.js"
+import aha,{q, l as list , ll } from "./main.js"
 
 console.log(ll);
 console.log(q);
