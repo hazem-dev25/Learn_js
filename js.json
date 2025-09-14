@@ -1,0 +1,11 @@
+{
+    "name": "hazem",
+    "num": 100, 
+    "country": {
+        "egy": "alex", 
+        "ksa": "makka"
+    }, 
+    "boolean": true
+}
+
+

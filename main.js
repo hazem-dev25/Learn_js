@@ -1987,3 +1987,58 @@ export {
     l,
     ll
 }
+
+// new revision <>
+
+let cairo =  { 
+    hazem: "male",
+    name: "hazem",
+    num: 100, 
+    country: {
+        "egy": "alex", 
+        "ksa": "makka"
+    }, 
+    boolean: true,
+    sayhi:function () {
+        return ` say hi to ${this.name} `
+    } 
+}
+
+
+console.log(cairo.hazem);
+console.log(cairo.boolean);
+console.log(cairo.name);
+console.log(cairo.country);
+console.log(cairo.sayhi());
+
+
+class egypt {
+    constructor(city, people, econamy, miltary) {
+        this.city = city;
+        this.people = people; 
+        this.econmy = econamy; 
+        this.miltary = miltary; 
+    }
+}
+
+
+let Egypt = new egypt("Alexandria", 1000_000_000, "100 million", "so powerfull"); 
+
+
+console.log(egypt.prototype);
+console.log(Egypt.city);
+console.log(Egypt.econmy);
+console.log(Egypt.miltary);
+console.log(Egypt.people);
+console.log(Egypt);
+
+Array.prototype.only_under_100 = function () {
+    return this.filter(function (ele) {
+        return ele < 100;
+    })
+}
+
+
+let test_array = [2, 4, 500, 4, 6, 800, 120, 54]; 
+
+console.log(test_array.only_under_100());
