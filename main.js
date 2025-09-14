@@ -2042,3 +2042,20 @@ Array.prototype.only_under_100 = function () {
 let test_array = [2, 4, 500, 4, 6, 800, 120, 54]; 
 
 console.log(test_array.only_under_100());
+
+
+// Parse And Stringify
+
+const jsontojs = `{"name": "hazem"}`
+
+console.log(jsontojs);
+
+const objj = JSON.parse(jsontojs);
+
+console.log(objj);
+
+objj ["name"] = "adel"; 
+
+const toJs = JSON.stringify(objj); 
+
+console.log(toJs);
