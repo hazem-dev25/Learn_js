@@ -2046,7 +2046,7 @@ console.log(test_array.only_under_100());
 
 // Parse And Stringify
 
-const jsontojs = `{"name": "hazem"}`
+const jsontojs = `{"name": "hazem" , "age": 30 , "counrty": "Egypt"}`
 
 console.log(jsontojs);
 
@@ -2055,7 +2055,45 @@ const objj = JSON.parse(jsontojs);
 console.log(objj);
 
 objj ["name"] = "adel"; 
+objj ["age"] = 60; 
 
 const toJs = JSON.stringify(objj); 
 
 console.log(toJs);
+
+// Asynchronous vs Synchronous Programming
+
+// Synchronous
+
+console.log("1"); 
+console.log("2");
+// window.alert("Synchronous"); 
+console.log("3"); 
+
+// Asynchronous
+
+console.log("1"); 
+console.log("2");
+setTimeout(() => console.log("Hazem is King"), 10000); 
+console.log("3"); 
+
+
+
+const hazo = `{"name": "hazem", "age": 24 , "city": "alexandria" }`
+
+console.log(hazo);
+
+const lazo = JSON.parse(hazo); 
+
+console.log(lazo);
+
+lazo  ["name"] = "adel";
+
+lazo  ["age"] = 60;
+
+lazo  ["city"] = "cairo";
+
+const faso = JSON.stringify(lazo); 
+
+console.log(faso);
+
