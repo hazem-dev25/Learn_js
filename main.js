@@ -2077,7 +2077,7 @@ console.log("2");
 setTimeout(() => console.log("Hazem is King"), 10000); 
 console.log("3"); 
 
-
+// revision {<></>}
 
 const hazo = `{"name": "hazem", "age": 24 , "city": "alexandria" }`
 
@@ -2089,7 +2089,7 @@ console.log(lazo);
 
 lazo  ["name"] = "adel";
 
-lazo  ["age"] = 60;
+lazo  ["age"] = 59;
 
 lazo  ["city"] = "cairo";
 
