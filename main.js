@@ -2074,7 +2074,7 @@ console.log("3");
 
 console.log("1"); 
 console.log("2");
-setTimeout(() => console.log("Hazem is King"), 10000); 
+setTimeout(() => console.log("Hazem is King"), 20000); 
 console.log("3"); 
 
 // revision {<></>}
@@ -2097,3 +2097,37 @@ const faso = JSON.stringify(lazo);
 
 console.log(faso);
 
+Array.prototype.sumnum = function () { 
+    return this.reduce(function (ele , element) {
+        return ele + element;
+    })
+}
+
+let numss = [2, 3, 4, 5, 6, 77, 6, 44]; 
+
+console.log(numss.sumnum());
+
+Array.prototype.lastelmentinArray = function () {
+    return this[this.length - 1];
+}; 
+
+let companys = ["hazem", "adel", "gaber"]; 
+
+console.log(companys.lastelmentinArray());
+console.log(Array.prototype);
+
+
+fetch("https://api.weather.gov/gridpoints/BOU/62,61/forecast")
+.then(response => response.json())
+.then(data => {
+    let today = data.properties.periods[0];
+    console.log(today.temperature, today.temperatureUnit, today.detailedForecast);
+});
+
+
+Array.prototype.maxnum = function () {
+    return this * 8;
+    }
+let max = [1, 3, 4, 5, 6, 7, 100];
+
+console.log(max.maxnum());
