@@ -2124,10 +2124,64 @@ fetch("https://api.weather.gov/gridpoints/BOU/62,61/forecast")
     console.log(today.temperature, today.temperatureUnit, today.detailedForecast);
 });
 
+setTimeout(() => console.log("Hazem adel"), 20000);
 
-Array.prototype.maxnum = function () {
-    return this * 8;
+function Myname() {
+    return "Hazem Adel Gaber Zaki Mohamed Abo Alfa"
+}
+
+console.log(Myname());
+
+
+let home = {
+    bed: 2,
+    doors: 5, 
+    tv: true, 
+    owner: "Hazem", 
+    All: function () {
+        return this.bed + this.doors;
     }
-let max = [1, 3, 4, 5, 6, 7, 100];
+}
 
-console.log(max.maxnum());
+console.log(home);
+console.log(home.All());
+console.log(typeof home.tv);
+home.bed = 3; 
+
+console.log(home.All());
+
+class car {
+    constructor(doors, wheels, mirror , type) {
+        this.doors = doors; 
+        this.wheels = wheels; 
+        this.mirror = mirror;
+        this.type = type;
+    }
+    getall() {
+        return this.doors + this.mirror + this.wheels;
+    }
+}
+
+let infocar = new car(4, 4, 3, "BMW");
+
+console.log(infocar.getall());
+
+class Owner extends car {
+    constructor(name, age, country) {
+        super(4, 4, 3, "Ford")
+        this.name = name; 
+        this.age = age; 
+        this.country = country;
+    }
+}
+
+let owner_car = new Owner("Hazem", 24, "Egypt"); 
+
+console.log(Owner.prototype);
+console.log(owner_car);
+
+Object.prototype.tall = 175;
+
+console.log(owner_car.tall);
+console.log(Object.prototype);
+
