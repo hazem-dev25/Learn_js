@@ -1,4 +1,4 @@
-
+console.log("HAzem");
 console.log("hallo");
 console.table(["hazem", "adel", "gaber"]);
 console.log(12);
@@ -2185,3 +2185,33 @@ Object.prototype.tall = 175;
 console.log(owner_car.tall);
 console.log(Object.prototype);
 
+
+console.log("###".repeat(20));
+console.log(Date.now());
+
+let date_now = new Date();
+
+console.log(date_now);
+
+console.log("hazem".add_doots());
+
+console.log("hazoma");
+
+Array.prototype.firstelment = function () {
+    return this[0];
+}
+
+let noms = [3, 4, 5, 6, 7, 8];
+
+console.log(noms.firstelment());
+
+
+function infooo (age , name) {
+    console.log(age , name)
+}
+
+infooo(12 , "hazem");
+
+consloe.log("###".repeat(20));
+
+console.log("hazem adel gaber zaki mohamed abo lafa");

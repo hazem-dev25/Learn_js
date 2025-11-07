@@ -8,3 +8,15 @@
   font-size: 30px;
   color: blueviolet;
 }
+
+.Hazem {
+  width: fit-content;
+  height: 100px;
+  color: aqua;
+  background-color: blueviolet;
+  font-size: large;
+  border: 2mm;
+  box-shadow: 3px ,red;
+  align-items: center;
+  padding-top: 50px;
+}
